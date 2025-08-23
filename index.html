@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Empleados</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        h1 {
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        #search-container {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Empleados</h1>
+    <div id="search-container">
+        <label for="name">Buscar empleado:</label>
+        <input type="text" id="name" placeholder="Nombre de empleado">
+        <button onclick="buscarEmpleado()">Buscar</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Salario</th>
+            </tr>
+        </thead>
+        <tbody id="herramientas-tabla">
+            
+        </tbody>
+    </table>
+    <br>
+    <br>
+
+    <button onclick="cargarInsertarEmpleado()">Insertar</button>
+
+    <script src = "src.js"></script>
+</body>
+</html>
