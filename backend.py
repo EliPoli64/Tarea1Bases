@@ -13,7 +13,6 @@ def ejecutarSPSelect(nombre):
         conexion = pyodbc.connect(stringConexion)
         cursor = conexion.cursor()
         cursor.execute("EXEC dbo.sp_FiltrarEmpleados @infiltro = ?", nombre)
-        conexion.commit()
         filas = cursor.fetchall()
         headers = ["ID", "Nombre", "Salario"]
         listaEmpleados = []
